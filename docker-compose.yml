@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+    alpine:
+        build:
+            context: ./
+        volumes:
+            - folder-volume:/workspace/folder-volume
+            - ./:/workspace
+
+volumes:
+    folder-volume:
